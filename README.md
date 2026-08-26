@@ -248,17 +248,19 @@ After Windows restarts, launch Kali Linux and complete the initial user setup.
 > Recommended when you trust the repository and want a quick installation.
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/rowonk-ahmed-khan/kali-wsl-setup/main/kali_setup.sh | bash
+curl -sSL https://raw.githubusercontent.com/Rk-000/Kali-Ultimate-Setup-Complete/main/kali_ultimate_setup_complete.sh | bash
 ```
 
 ## Method 2 — Download and Run Manually
 
 ```bash
-wget https://raw.githubusercontent.com/rowonk-ahmed-khan/kali-wsl-setup/main/kali_setup.sh
+wget [https://raw.githubusercontent.com/rowonk-ahmed-khan/kali-wsl-setup/main/kali_setup.sh](https://raw.githubusercontent.com/Rk-000/Kali-Ultimate-Setup-Complete/main/kali_ultimate_setup_complete.sh
 
-chmod +x kali_setup.sh
+chmod +x kali_ultimate_setup_complete.sh
 
-./kali_setup.sh
+sed -i 's/\r$//' kali_ultimate_setup_complete.sh
+
+./kali_ultimate_setup_complete.sh
 ```
 
 ## Method 3 — Create the Script Locally
@@ -266,13 +268,28 @@ chmod +x kali_setup.sh
 Create a local script file:
 
 ```bash
-cat > kali_setup.sh <<'EOF'
+cat > kali_ultimate_setup_complete.sh <<'EOF'
 # Paste the contents of kali_setup.sh here
 EOF
 
-chmod +x kali_setup.sh
+chmod +x kali_ultimate_setup_complete.sh
+sed -i 's/\r$//' kali_ultimate_setup_complete.sh
 
-./kali_setup.sh
+./kali_ultimate_setup_complete.sh
+```
+
+## Method 4 — Using Git Clone
+
+Go To The Desired Folder Where You Want To Download 
+
+```Open Terminal As ROOT
+git Clone https://github.com/Rk-000/Kali-Ultimate-Setup-Complete.git
+
+chmod +x kali_ultimate_setup_complete.sh
+
+sed -i 's/\r$//' kali_ultimate_setup_complete.sh
+
+./kali_ultimate_setup_complete.sh
 ```
 
 > The repository's actual `kali_setup.sh` should be used instead of manually copying the script whenever possible.
