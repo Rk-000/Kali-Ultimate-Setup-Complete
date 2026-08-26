@@ -292,7 +292,7 @@ sed -i 's/\r$//' kali_ultimate_setup_complete.sh
 ./kali_ultimate_setup_complete.sh
 ```
 
-> The repository's actual `kali_setup.sh` should be used instead of manually copying the script whenever possible.
+> The repository's actual `kali_ultimate_setup_complete.sh` should be used instead of manually copying the script whenever possible.
 
 ---
 
